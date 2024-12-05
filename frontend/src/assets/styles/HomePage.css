@@ -5,7 +5,9 @@
     text-align: center; /* Center the text */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin-top: 20px; /* Space from top elements */
+    margin-top: 90px; /* Space from top elements */
+    font-family: 'Roboto', sans-serif; /* Consistent modern font */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
 }
 
 /* Headline Styling */
@@ -13,7 +15,9 @@
     font-size: 32px; /* Larger text for the headline */
     margin-bottom: 20px; /* Space below the headline */
     color: #333; /* Dark gray text */
-    font-family: 'Arial', sans-serif; /* Clean font */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    font-weight: 600; /* Bold the headline */
+    line-height: 1.4; /* Line height for readability */
 }
 
 /* Paragraph Styling */
@@ -25,6 +29,11 @@
     margin: 0 auto; /* Center align */
 }
 
+/* Hover effect on the homepage container */
+.homepage:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .homepage {
@@ -33,9 +42,26 @@
 
     .homepage h2 {
         font-size: 28px; /* Adjust headline size */
+        margin-bottom: 15px; /* Slightly reduce space below the headline */
     }
 
     .homepage p {
         font-size: 16px; /* Adjust paragraph size */
+        max-width: 90%; /* Allow paragraph to take up more space */
+    }
+}
+
+@media (max-width: 480px) {
+    /* For very small screens (phones in portrait mode) */
+    .homepage {
+        padding: 20px 10px; /* Further reduce padding */
+    }
+
+    .homepage h2 {
+        font-size: 24px; /* Adjust headline size for very small screens */
+    }
+
+    .homepage p {
+        font-size: 14px; /* Adjust paragraph size */
     }
 }

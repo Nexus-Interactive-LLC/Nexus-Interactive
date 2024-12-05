@@ -7,12 +7,15 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     max-width: 600px; /* Center and constrain the width */
     text-align: center;
+    font-family: 'Roboto', sans-serif; /* Ensuring consistent font */
 }
 
+/* Form Heading */
 .contact-form h2 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #333;
+    font-weight: 500;
 }
 
 /* Form Styles */
@@ -22,21 +25,24 @@
     gap: 15px; /* Spacing between elements */
 }
 
+/* Input and Textarea Styles */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px; /* Adjusted padding for consistency */
     font-size: 16px;
+    font-family: 'Roboto', sans-serif; /* Consistent font across inputs */
     border: 1px solid #ccc; /* Light gray border */
     border-radius: 5px;
     outline: none;
-    transition: border-color 0.3s ease; /* Smooth focus effect */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth focus effect */
 }
 
-/* Change border color on focus */
+/* Change border color and add box shadow on focus */
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #007bff; /* Blue border */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow effect */
 }
 
 /* Button Styles */
@@ -48,12 +54,13 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect and scale */
 }
 
 /* Hover effect for button */
 .contact-form button:hover {
     background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05); /* Slight grow effect */
 }
 
 /* Textarea Resize */
@@ -75,5 +82,11 @@
     .contact-form button {
         font-size: 14px;
         padding: 10px;
+    }
+
+    /* Adjust input and textarea padding for smaller screens */
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px; /* Reduced padding for mobile */
     }
 }

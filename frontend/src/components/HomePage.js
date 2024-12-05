@@ -6,6 +6,7 @@ const HomePage = () => (
         <h2>Welcome to Nexus Interactive </h2>
         <p>We create modern, responsive, and high-performing websites for businesses.</p>
     </section>
+
 );
 
 export default HomePage;

@@ -4,14 +4,26 @@
     color: #fff; /* White text */
     text-align: center; /* Center align the content */
     padding: 20px 0; /* Vertical padding */
-    margin-top: 20px; /* Add some space above the footer */
+    margin-top: 40px; /* Add more space above the footer */
     font-size: 14px; /* Slightly smaller text */
+    font-family: 'Roboto', sans-serif; /* Use consistent font for footer */
 }
 
 /* Copyright Text */
 .footer p {
     margin: 0; /* Remove default margin */
-    font-family: Arial, sans-serif; /* Clean, modern font */
+    font-size: 14px; /* Consistent font size */
+}
+
+/* Footer Link Styles (Optional) */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #007bff; /* Blue color on hover */
 }
 
 /* Responsive Design */
@@ -19,5 +31,17 @@
     .footer {
         padding: 15px 0; /* Less padding on smaller screens */
         font-size: 12px; /* Slightly smaller font size for mobile */
+        margin-top: 30px; /* Adjust the margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* For very small screens (phones in portrait mode) */
+    .footer {
+        padding: 10px 0; /* Further reduce padding */
+    }
+
+    .footer p {
+        font-size: 12px; /* Further reduce font size */
     }
 }

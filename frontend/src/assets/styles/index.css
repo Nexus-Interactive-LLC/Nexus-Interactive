@@ -1,4 +1,8 @@
 /* Global Styling */
+section {
+    margin-bottom: 125px; /* Adds space below every section */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +11,11 @@
 
 /* Body Styling */
 body {
-    font-family: Arial, sans-serif; /* Use a clean, sans-serif font */
+    font-family: 'Roboto', sans-serif; /* Modern, clean font for consistency */
     background-color: #f8f8f8; /* Light gray background */
     color: #333; /* Dark gray text for readability */
+    font-size: 16px; /* Base font size */
+    line-height: 1.5; /* Improve line spacing for better readability */
 }
 
 /* Root element styling */
@@ -17,12 +23,15 @@ body {
     min-height: 100vh; /* Full screen height */
     display: flex;
     flex-direction: column;
+    background-color: #f8f8f8; /* Ensure consistent background color */
 }
 
 /* Global Styles for Main Container */
 main {
     flex-grow: 1; /* Make sure the main content section takes up available space */
     padding: 20px;
+    max-width: 1200px; /* Ensure content doesn't stretch too far on large screens */
+    margin: 0 auto; /* Center align content */
 }
 
 /* Responsive Design */
@@ -33,5 +42,16 @@ main {
 
     main {
         padding: 15px; /* Reduced padding on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    /* For very small screens (portrait mode phones) */
+    body {
+        font-size: 13px; /* Further reduce font size for very small screens */
+    }
+
+    main {
+        padding: 10px; /* More reduced padding for mobile */
     }
 }
