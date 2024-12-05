@@ -17,6 +17,6 @@ app.use('/api/services', serviceRoutes);
 app.use('/api/contact', contactRoutes);
 
 // Start the server
-app.listen(3000, () => {
-    console.log('Server is running on port 3000');
+app.listen(3002, () => {
+    console.log('Server is running on port 3002');
 });
