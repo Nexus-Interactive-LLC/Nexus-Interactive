@@ -1,12 +1,14 @@
-const mongoose = require('mongoose');
+require('dotenv').config();  // Load environment variables from .env file
 
-mongoose.connect('mongodb+srv://aadem01:se8YsR7UEiW0EjmD@nexus-interactive.ssgy4.mongodb.net/nexus_interactive?retryWrites=true&w=majority&appName=nexus-interactive', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
+const mongoose = require('mongoose');
+const PASSWORD = process.env.PASSWORD;
+const USERNAME = process.env.USERNAME;
+
+
+mongoose.connect(`mongodb+srv://${USERNAME}:${PASSWORD}@nexus-interactive.ssgy4.mongodb.net/nexus_interactive?retryWrites=true&w=majority&appName=nexus-interactive`, {})
     .then(() => {
-        console.log("Connected to MongoDB Atlas - Nexus Database");
+        console.log('Connected to MongoDB');
     })
-    .catch((error) => {
-        console.error("Error connecting to MongoDB Atlas:", error);
+    .catch((err) => {
+        console.error('Error connecting to MongoDB', err);
     });

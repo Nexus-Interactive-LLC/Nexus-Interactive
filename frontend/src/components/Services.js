@@ -19,6 +19,7 @@ const Services = () => {
                     <li key={index}>
                         <h3>{service.title}</h3>
                         <p>{service.description}</p>
+                        <br/>
                     </li>
                 ))}
             </ul>
