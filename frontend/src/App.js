@@ -5,17 +5,18 @@ import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import Partners from './components/Partners';
 import Services from './components/Services';
-import ContactForm from './components/ContactForm';
+import ScheduleCall from "./components/ScheduleCall";
 
 function App() {
   return (
       <div className="App">
         <Header />
         <main>
-          <HomePage />
-          <Partners />
-          <Services />
-          <ContactForm />
+            <HomePage />
+            <Partners />
+            <Services />
+            <h2>Want to work with us?</h2>
+            <ScheduleCall/>
         </main>
         <Footer />
       </div>

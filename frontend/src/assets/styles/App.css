@@ -1,23 +1,26 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* App Styling */
 .App {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;  /* Updated font */
   color: #333; /* Default text color */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  background-color: #fafafa; /* Light grey background for minimal feel */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* For better readability */
 }
 
 /* Main Section Styling */
 main {
   padding: 20px; /* Space around the content */
+  margin-top: 20px; /* Space from top of the page */
 }
 
-/* Responsive Design for smaller screens */
-@media (max-width: 768px) {
-  .App {
-    font-size: 14px; /* Slightly smaller font for smaller screens */
-  }
-
-  main {
-    padding: 15px; /* Less padding on smaller screens */
-  }
+h2 {
+  text-align: center;
 }

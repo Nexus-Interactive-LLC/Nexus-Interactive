@@ -1,29 +1,61 @@
 /* Services Section */
 .services {
     background-color: #f4f4f4; /* Light gray background */
-    padding: 20px;
+    padding: 40px 20px; /* Add more padding for larger screens */
+    text-align: center; /* Center align the section content */
+}
+
+/* Heading for the Services Section */
+.services h2 {
+    font-size: 32px; /* Larger heading */
+    color: #333;
+    margin-bottom: 30px; /* Space below heading */
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
 }
 
 /* Unordered List */
 .services ul {
     list-style: none; /* Remove default list styling */
     padding: 0;
+    margin: 0; /* Remove default margin */
 }
 
 /* List Items */
 .services li {
-    margin: 10px 0; /* Add space between each service item */
+    margin: 15px 0; /* Add more space between each service item */
     font-size: 18px; /* Slightly larger text for readability */
     color: #333; /* Dark gray text */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover Effect for List Items */
+.services li:hover {
+    transform: translateX(5px); /* Slide effect on hover */
+    color: #63dcbc; /* Change text color on hover */
 }
 
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .services {
-        padding: 15px; /* Less padding on smaller screens */
+        padding: 30px 15px; /* Less padding on smaller screens */
+    }
+
+    .services h2 {
+        font-size: 28px; /* Slightly smaller heading */
     }
 
     .services li {
         font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* For very small screens like mobile devices */
+    .services h2 {
+        font-size: 24px; /* Further adjust heading size */
+    }
+
+    .services li {
+        font-size: 14px; /* Further adjust list item font size */
     }
 }
