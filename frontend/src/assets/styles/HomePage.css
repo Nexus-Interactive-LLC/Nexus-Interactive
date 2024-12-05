@@ -1,0 +1,41 @@
+/* HomePage Container */
+.homepage {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 50px 20px; /* Spacious padding */
+    text-align: center; /* Center the text */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 20px; /* Space from top elements */
+}
+
+/* Headline Styling */
+.homepage h2 {
+    font-size: 32px; /* Larger text for the headline */
+    margin-bottom: 20px; /* Space below the headline */
+    color: #333; /* Dark gray text */
+    font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+/* Paragraph Styling */
+.homepage p {
+    font-size: 18px; /* Moderate size for easy readability */
+    color: #555; /* Medium gray text */
+    line-height: 1.6; /* Line spacing for readability */
+    max-width: 800px; /* Max width for the paragraph */
+    margin: 0 auto; /* Center align */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .homepage {
+        padding: 30px 15px; /* Less padding on smaller screens */
+    }
+
+    .homepage h2 {
+        font-size: 28px; /* Adjust headline size */
+    }
+
+    .homepage p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+}

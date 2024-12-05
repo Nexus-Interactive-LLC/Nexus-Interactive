@@ -1,0 +1,23 @@
+/* Footer Container */
+.footer {
+    background-color: #333; /* Dark gray background */
+    color: #fff; /* White text */
+    text-align: center; /* Center align the content */
+    padding: 20px 0; /* Vertical padding */
+    margin-top: 20px; /* Add some space above the footer */
+    font-size: 14px; /* Slightly smaller text */
+}
+
+/* Copyright Text */
+.footer p {
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Clean, modern font */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 0; /* Less padding on smaller screens */
+        font-size: 12px; /* Slightly smaller font size for mobile */
+    }
+}

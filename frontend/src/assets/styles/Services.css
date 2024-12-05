@@ -1,0 +1,29 @@
+/* Services Section */
+.services {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 20px;
+}
+
+/* Unordered List */
+.services ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+}
+
+/* List Items */
+.services li {
+    margin: 10px 0; /* Add space between each service item */
+    font-size: 18px; /* Slightly larger text for readability */
+    color: #333; /* Dark gray text */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .services {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+
+    .services li {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}

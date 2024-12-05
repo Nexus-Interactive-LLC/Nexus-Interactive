@@ -1,0 +1,87 @@
+/* Partners Section */
+.partners {
+    padding: 50px 20px;
+    background-color: #fafafa; /* Light background */
+    text-align: center; /* Center the text */
+}
+
+/* Heading */
+.partners h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Partners Grid */
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Partners Item */
+.partners-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Full width within grid cell */
+    max-width: 350px; /* Limit width */
+}
+
+/* Hover Effect for Partners Items */
+.partners-item:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+}
+
+/* Partner Title */
+.partners-item h3 {
+    font-size: 24px;
+    color: #007bff; /* Blue color for title */
+    margin-bottom: 10px;
+}
+
+/* Partner Description */
+.partners-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Partner Link */
+.partners-item a {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for partner link */
+.partners-item a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .partners h2 {
+        font-size: 28px; /* Slightly smaller heading */
+    }
+
+    .partners-item {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+
+    .partners-item h3 {
+        font-size: 20px; /* Adjust title font size */
+    }
+
+    .partners-item p {
+        font-size: 14px; /* Adjust description font size */
+    }
+}

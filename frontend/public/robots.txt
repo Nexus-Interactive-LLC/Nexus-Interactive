@@ -1,0 +1,11 @@
+# Allow all bots to access everything
+User-agent: *
+Disallow:
+
+# Block sensitive or unnecessary folders (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+
+# Link to the sitemap for better SEO
+Sitemap: https://yourwebsite.com/sitemap.xml

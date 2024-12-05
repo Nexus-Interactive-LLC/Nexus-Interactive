@@ -1,0 +1,46 @@
+/* Header Container */
+.header {
+    background-color: #007bff; /* Bright blue background */
+    color: white; /* White text for contrast */
+    padding: 20px; /* Space around content */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Spread out items */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Header Title */
+.header h1 {
+    font-size: 24px; /* Slightly larger text */
+    margin: 0; /* Remove default margin */
+    font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+/* Navigation Links */
+.header nav {
+    display: flex; /* Arrange links horizontally */
+    gap: 20px; /* Space between links */
+}
+
+.header nav a {
+    color: white; /* Match text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Normal font size */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Links */
+.header nav a:hover {
+    color: #ffdd57; /* Gold color on hover */
+
+    @media (max-width: 768px) {
+        .header {
+            flex-direction: column; /* Stack items vertically */
+            text-align: center;
+        }
+
+        .header nav {
+            margin-top: 10px;
+        }
+    }
+}

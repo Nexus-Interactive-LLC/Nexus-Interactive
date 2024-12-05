@@ -1,0 +1,37 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and borders don't affect the width/height */
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif; /* Use a clean, sans-serif font */
+    background-color: #f8f8f8; /* Light gray background */
+    color: #333; /* Dark gray text for readability */
+}
+
+/* Root element styling */
+#root {
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Global Styles for Main Container */
+main {
+    flex-grow: 1; /* Make sure the main content section takes up available space */
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Slightly smaller font size on smaller screens */
+    }
+
+    main {
+        padding: 15px; /* Reduced padding on mobile */
+    }
+}

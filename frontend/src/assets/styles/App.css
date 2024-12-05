@@ -1,0 +1,23 @@
+/* App Styling */
+.App {
+  font-family: Arial, sans-serif;
+  color: #333; /* Default text color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Main Section Styling */
+main {
+  padding: 20px; /* Space around the content */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .App {
+    font-size: 14px; /* Slightly smaller font for smaller screens */
+  }
+
+  main {
+    padding: 15px; /* Less padding on smaller screens */
+  }
+}

@@ -1,0 +1,79 @@
+/* General Styles */
+.contact-form {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Center and constrain the width */
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Styles */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between elements */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease; /* Smooth focus effect */
+}
+
+/* Change border color on focus */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff; /* Blue border */
+}
+
+/* Button Styles */
+.contact-form button {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for button */
+.contact-form button:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+/* Textarea Resize */
+.contact-form textarea {
+    resize: none; /* Disable resizing */
+    height: 100px; /* Set a default height */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-form h2 {
+        font-size: 20px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
