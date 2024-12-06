@@ -18,7 +18,6 @@ const Partners = () => {
                     <div key={index} className="partners-item">
                         <h3>{partner.title}</h3>
                         <p>{partner.description}</p>
-                        <a href={partner.link} target="_blank" rel="noopener noreferrer">View Partners</a>
                     </div>
                 ))}
             </div>

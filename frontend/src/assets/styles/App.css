@@ -1,26 +1,63 @@
-/* Global Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
 }
 
-/* App Styling */
 .App {
-  font-family: 'Roboto', sans-serif;  /* Updated font */
-  color: #333; /* Default text color */
-  background-color: #fafafa; /* Light grey background for minimal feel */
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #fafafa;
   margin: 0;
   padding: 0;
-  line-height: 1.6; /* For better readability */
+  line-height: 1.6;
 }
 
-/* Main Section Styling */
 main {
-  padding: 20px; /* Space around the content */
-  margin-top: 20px; /* Space from top of the page */
+  padding: 20px;
+  margin-top: 20px;
 }
 
 h2 {
   text-align: center;
+  font-size: 29px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.section:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.section:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.section:nth-child(4) {
+  animation-delay: 0.8s;
 }

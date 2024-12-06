@@ -1,47 +1,43 @@
-/* Footer Container */
 .footer {
-    background-color: #333; /* Dark gray background */
-    color: #fff; /* White text */
-    text-align: center; /* Center align the content */
-    padding: 20px 0; /* Vertical padding */
-    margin-top: 40px; /* Add more space above the footer */
-    font-size: 14px; /* Slightly smaller text */
-    font-family: 'Roboto', sans-serif; /* Use consistent font for footer */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Copyright Text */
 .footer p {
-    margin: 0; /* Remove default margin */
-    font-size: 14px; /* Consistent font size */
+    margin: 0;
+    font-size: 14px;
 }
 
-/* Footer Link Styles (Optional) */
-.footer a {
+.footer-link {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
-.footer a:hover {
-    color: #007bff; /* Blue color on hover */
+.footer-link:hover {
+    color: #007bff;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .footer {
-        padding: 15px 0; /* Less padding on smaller screens */
-        font-size: 12px; /* Slightly smaller font size for mobile */
-        margin-top: 30px; /* Adjust the margin for smaller screens */
+        padding: 15px 0;
+        font-size: 12px;
+        margin-top: 30px;
     }
 }
 
 @media (max-width: 480px) {
-    /* For very small screens (phones in portrait mode) */
     .footer {
-        padding: 10px 0; /* Further reduce padding */
+        padding: 10px 0;
     }
 
     .footer p {
-        font-size: 12px; /* Further reduce font size */
+        font-size: 12px;
     }
 }

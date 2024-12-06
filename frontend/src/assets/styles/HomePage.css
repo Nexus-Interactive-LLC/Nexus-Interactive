@@ -1,67 +1,65 @@
-/* HomePage Container */
 .homepage {
-    background-color: #f4f4f4; /* Light gray background */
-    padding: 50px 20px; /* Spacious padding */
-    text-align: center; /* Center the text */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin-top: 90px; /* Space from top elements */
-    font-family: 'Roboto', sans-serif; /* Consistent modern font */
-    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 90px;
+    font-family: 'Roboto', sans-serif;
+    transition: box-shadow 0.3s ease;
 }
 
-/* Headline Styling */
 .homepage h2 {
-    font-size: 32px; /* Larger text for the headline */
-    margin-bottom: 20px; /* Space below the headline */
-    color: #333; /* Dark gray text */
-    font-family: 'Roboto', sans-serif; /* Modern font */
-    font-weight: 600; /* Bold the headline */
-    line-height: 1.4; /* Line height for readability */
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
 }
 
-/* Paragraph Styling */
 .homepage p {
-    font-size: 18px; /* Moderate size for easy readability */
-    color: #555; /* Medium gray text */
-    line-height: 1.6; /* Line spacing for readability */
-    max-width: 800px; /* Max width for the paragraph */
-    margin: 0 auto; /* Center align */
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* Hover effect on the homepage container */
 .homepage:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Design */
+section {
+    scroll-margin-top: 80px;
+}
+
 @media (max-width: 768px) {
     .homepage {
-        padding: 30px 15px; /* Less padding on smaller screens */
+        padding: 30px 15px;
     }
 
     .homepage h2 {
-        font-size: 28px; /* Adjust headline size */
-        margin-bottom: 15px; /* Slightly reduce space below the headline */
+        font-size: 28px;
+        margin-bottom: 15px;
     }
 
     .homepage p {
-        font-size: 16px; /* Adjust paragraph size */
-        max-width: 90%; /* Allow paragraph to take up more space */
+        font-size: 16px;
+        max-width: 90%;
     }
 }
 
 @media (max-width: 480px) {
-    /* For very small screens (phones in portrait mode) */
     .homepage {
-        padding: 20px 10px; /* Further reduce padding */
+        padding: 20px 10px;
     }
 
     .homepage h2 {
-        font-size: 24px; /* Adjust headline size for very small screens */
+        font-size: 24px;
     }
 
     .homepage p {
-        font-size: 14px; /* Adjust paragraph size */
+        font-size: 14px;
     }
 }

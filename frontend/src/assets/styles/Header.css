@@ -1,62 +1,57 @@
-/* Header Container */
 .header {
-    background-color: #ffffff; /* Bright blue background */
-    color: #000000; /* White text for contrast */
-    padding: 20px 30px; /* Space around content */
-    display: flex; /* Flexbox for layout */
-    justify-content: space-between; /* Spread out items */
-    align-items: center; /* Center items vertically */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    font-family: 'Roboto', sans-serif; /* Use modern font */
-    position: fixed;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
     width: 100%;
 }
 
-/* Header Title */
 .header h1 {
-    font-size: 28px; /* Slightly larger title */
-    margin: 0; /* Remove default margin */
-    font-weight: 600; /* Bold the title */
-    font-family: 'Roboto', sans-serif; /* Consistent font */
+    font-size: 28px;
+    margin: 0;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
-/* Navigation Links */
 .header nav {
-    display: flex; /* Arrange links horizontally */
-    gap: 20px; /* Space between links */
+    display: flex;
+    gap: 20px;
 }
 
 .header nav a {
-    color: #000000; /* Match text color */
-    text-decoration: none; /* Remove underline */
-    font-size: 16px; /* Normal font size */
-    font-weight: 500; /* Slightly bolder links */
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth hover effect */
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 510;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-/* Hover Effect for Links */
 .header nav a:hover {
     color: rgba(0, 0, 0, 0.57);
 }
 
-/* Mobile Responsive Design */
 @media (max-width: 768px) {
     .header {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
         text-align: center;
-        padding: 15px 20px; /* Adjust padding on small screens */
+        padding: 15px 20px;
     }
 
     .header h1 {
-        font-size: 24px; /* Adjust title size for mobile */
+        font-size: 24px;
     }
 
     .header nav {
         margin-top: 10px;
-        gap: 15px; /* Reduce space between links */
+        gap: 15px;
     }
 
     .header nav a {
-        font-size: 14px; /* Smaller font size for mobile links */
+        font-size: 14px;
     }
 }

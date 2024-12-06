@@ -1,112 +1,105 @@
-/* Partners Section */
 .partners {
     padding: 50px 20px;
-    background-color: #fafafa; /* Light background */
-    text-align: center; /* Center the text */
-    margin-top: 20px; /* Space above the section */
+    background-color: transparent;
+    text-align: center;
+    margin-top: 20px;
 }
 
-/* Heading */
 .partners h2 {
     font-size: 32px;
     margin-bottom: 30px;
     color: #333;
-    font-family: 'Roboto', sans-serif; /* Modern font */
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Partners Grid */
 .partners-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
     justify-items: center;
 }
 
-/* Partners Item */
 .partners-item {
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    width: 100%; /* Full width within grid cell */
-    max-width: 350px; /* Limit width */
-    cursor: pointer; /* Make items look clickable */
+    width: 100%;
+    max-width: 350px;
+    cursor: pointer;
 }
 
-/* Hover Effect for Partners Items */
 .partners-item:hover {
-    transform: translateY(-10px); /* Lift effect on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Deeper shadow */
-    background-color: #f0f8ff; /* Light background color change on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    background-color: #eff1f3;
 }
 
-/* Partner Title */
 .partners-item h3 {
     font-size: 24px;
-    color: #63dcbc; /* Blue color for title */
+    color: #63dcbc;
     margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif; /* Consistent font */
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Partner Description */
 .partners-item p {
     font-size: 16px;
     color: #555;
     margin-bottom: 15px;
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.6;
 }
 
-/* Partner Link */
 .partners-item a {
     display: inline-block;
-    color: #63dcbc;
+    color: #000000;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-/* Hover effect for partner link */
 .partners-item a:hover {
-    color: #73bda9; /* Darker blue on hover */
+    color: #73bda9;
 }
 
-/* Responsive Design */
+section {
+    scroll-margin-top: 80px;
+}
+
 @media (max-width: 768px) {
     .partners h2 {
-        font-size: 28px; /* Slightly smaller heading */
+        font-size: 28px;
     }
 
     .partners-item {
-        padding: 15px; /* Less padding on smaller screens */
+        padding: 15px;
     }
 
     .partners-item h3 {
-        font-size: 20px; /* Adjust title font size */
+        font-size: 20px;
     }
 
     .partners-item p {
-        font-size: 14px; /* Adjust description font size */
+        font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
-    /* For smaller screens like mobile devices */
     .partners h2 {
-        font-size: 24px; /* Further adjust heading size */
+        font-size: 24px;
     }
 
     .partners-item {
-        padding: 10px; /* Further reduce padding */
+        padding: 10px;
     }
 
     .partners-item h3 {
-        font-size: 18px; /* Further adjust title font size */
+        font-size: 18px;
     }
 
     .partners-item p {
-        font-size: 13px; /* Adjust description font size */
+        font-size: 13px;
     }
 }
