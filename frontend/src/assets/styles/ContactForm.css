@@ -1,16 +1,14 @@
-/* General Styles */
 .contact-form {
-    background-color: #f9f9f9; /* Light gray background */
+    background-color: #f9f9f9;
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 600px; /* Center and constrain the width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
     text-align: center;
-    font-family: 'Roboto', sans-serif; /* Ensuring consistent font */
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Form Heading */
 .contact-form h2 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -18,58 +16,51 @@
     font-weight: 500;
 }
 
-/* Form Styles */
 .contact-form form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Spacing between elements */
+    gap: 15px;
 }
 
-/* Input and Textarea Styles */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 12px; /* Adjusted padding for consistency */
+    padding: 12px;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif; /* Consistent font across inputs */
-    border: 1px solid #ccc; /* Light gray border */
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth focus effect */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Change border color and add box shadow on focus */
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #007bff; /* Blue border */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow effect */
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Button Styles */
 .contact-form button {
-    background-color: #007bff; /* Blue background */
+    background-color: #007bff;
     color: white;
     padding: 12px 20px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect and scale */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Hover effect for button */
 .contact-form button:hover {
-    background-color: #0056b3; /* Darker blue */
-    transform: scale(1.05); /* Slight grow effect */
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
-/* Textarea Resize */
 .contact-form textarea {
-    resize: none; /* Disable resizing */
-    height: 100px; /* Set a default height */
+    resize: none;
+    height: 100px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .contact-form {
         padding: 15px;
@@ -84,9 +75,8 @@
         padding: 10px;
     }
 
-    /* Adjust input and textarea padding for smaller screens */
     .contact-form input,
     .contact-form textarea {
-        padding: 10px; /* Reduced padding for mobile */
+        padding: 10px;
     }
 }

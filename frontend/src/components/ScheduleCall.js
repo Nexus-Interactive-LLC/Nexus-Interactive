@@ -13,7 +13,7 @@ const ScheduleButton = () => {
     };
 
     return (
-        <div id="schedulecall" className="schedule-button-container"> {/* Add the id here */}
+        <div id="schedulecall" className="schedule-button-container">
             <button className="schedule-button" onClick={openModal}>
                 Schedule Appointment
             </button>

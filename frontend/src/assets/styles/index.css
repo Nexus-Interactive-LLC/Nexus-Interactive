@@ -1,57 +1,56 @@
 /* Global Styling */
 section {
-    margin-bottom: 125px; /* Adds space below every section */
+    margin-bottom: 125px;
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure padding and borders don't affect the width/height */
+    box-sizing: border-box;
 }
 
 /* Body Styling */
 body {
-    font-family: 'Roboto', sans-serif; /* Modern, clean font for consistency */
-    background-color: #f8f8f8; /* Light gray background */
-    color: #333; /* Dark gray text for readability */
-    font-size: 16px; /* Base font size */
-    line-height: 1.5; /* Improve line spacing for better readability */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 /* Root element styling */
 #root {
-    min-height: 100vh; /* Full screen height */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #f8f8f8; /* Ensure consistent background color */
+    background-color: #f8f8f8;
 }
 
 /* Global Styles for Main Container */
 main {
-    flex-grow: 1; /* Make sure the main content section takes up available space */
+    flex-grow: 1;
     padding: 20px;
-    max-width: 1200px; /* Ensure content doesn't stretch too far on large screens */
-    margin: 0 auto; /* Center align content */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
-        font-size: 14px; /* Slightly smaller font size on smaller screens */
+        font-size: 14px;
     }
 
     main {
-        padding: 15px; /* Reduced padding on mobile */
+        padding: 15px;
     }
 }
 
 @media (max-width: 480px) {
-    /* For very small screens (portrait mode phones) */
     body {
-        font-size: 13px; /* Further reduce font size for very small screens */
+        font-size: 13px;
     }
 
     main {
-        padding: 10px; /* More reduced padding for mobile */
+        padding: 10px;
     }
 }

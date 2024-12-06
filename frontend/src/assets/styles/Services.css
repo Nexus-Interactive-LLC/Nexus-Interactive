@@ -1,61 +1,60 @@
 /* Services Section */
 .services {
-    background-color: #f4f4f4; /* Light gray background */
-    padding: 40px 20px; /* Add more padding for larger screens */
-    text-align: center; /* Center align the section content */
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
 }
 
-/* Heading for the Services Section */
 .services h2 {
-    font-size: 32px; /* Larger heading */
+    font-size: 32px;
     color: #333;
-    margin-bottom: 30px; /* Space below heading */
-    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Unordered List */
 .services ul {
-    list-style: none; /* Remove default list styling */
+    list-style: none;
     padding: 0;
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
-/* List Items */
 .services li {
-    margin: 15px 0; /* Add more space between each service item */
-    font-size: 18px; /* Slightly larger text for readability */
-    color: #333; /* Dark gray text */
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+    margin: 15px 0;
+    font-size: 18px;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Hover Effect for List Items */
 .services li:hover {
-    transform: translateX(5px); /* Slide effect on hover */
-    color: #63dcbc; /* Change text color on hover */
+    transform: translateX(5px);
+    color: #63dcbc;
 }
 
-/* Responsive Design for smaller screens */
+section {
+    scroll-margin-top: 80px;
+}
+
 @media (max-width: 768px) {
     .services {
-        padding: 30px 15px; /* Less padding on smaller screens */
+        padding: 30px 15px;
     }
 
     .services h2 {
-        font-size: 28px; /* Slightly smaller heading */
+        font-size: 28px;
     }
 
     .services li {
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 16px;
     }
 }
 
 @media (max-width: 480px) {
-    /* For very small screens like mobile devices */
     .services h2 {
-        font-size: 24px; /* Further adjust heading size */
+        font-size: 24px;
     }
 
     .services li {
-        font-size: 14px; /* Further adjust list item font size */
+        font-size: 14px;
     }
 }
