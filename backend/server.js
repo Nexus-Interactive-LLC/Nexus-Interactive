@@ -15,9 +15,9 @@ app.use(bodyParser.json()); // To parse JSON bodies
 require('./db');  // Import MongoDB connection setup
 
 // Use routes with '/api' prefix
-app.use('/api/partners', partnerRoutes);
-app.use('/api/services', serviceRoutes);
-app.use('/api/contact', contactRoutes);
+app.use('/partners', partnerRoutes);
+app.use('/services', serviceRoutes);
+app.use('/contact', contactRoutes);
 
 // Start the server
 const PORT = process.env.PORT || 5000;
