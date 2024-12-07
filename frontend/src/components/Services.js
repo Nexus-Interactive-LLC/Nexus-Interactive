@@ -8,7 +8,7 @@ const Services = () => {
     const API_BASE_URL = 'https://nexus-interactive.onrender.com';
 
     useEffect(() => {
-        fetch(`${API_BASE_URL}/api/services`)
+        fetch(`${API_BASE_URL}/services`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);

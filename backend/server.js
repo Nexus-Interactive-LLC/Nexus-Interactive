@@ -12,9 +12,9 @@ app.use(bodyParser.json()); // To parse JSON bodies
 require('./db');  // Import MongoDB connection setup
 
 // Use routes
-app.use('/api/partners', partnerRoutes);
-app.use('/api/services', serviceRoutes);
-app.use('/api/contact', contactRoutes);
+app.use('/partners', partnerRoutes);
+app.use('/services', serviceRoutes);
+app.use('/contact', contactRoutes);
 
 const cors = require('cors');
 app.use(cors());
