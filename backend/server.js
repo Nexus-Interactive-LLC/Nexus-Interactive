@@ -16,6 +16,9 @@ app.use('/api/partners', partnerRoutes);
 app.use('/api/services', serviceRoutes);
 app.use('/api/contact', contactRoutes);
 
+const cors = require('cors');
+app.use(cors());
+
 // Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
