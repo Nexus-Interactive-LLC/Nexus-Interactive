@@ -8,7 +8,7 @@ const Partners = () => {
     const API_BASE_URL = 'https://nexus-interactive.onrender.com';
 
     useEffect(() => {
-        fetch(`${API_BASE_URL}/api/partners`) // Full URL for the backend API
+        fetch(`${API_BASE_URL}/api/partners`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
