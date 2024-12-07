@@ -4,9 +4,17 @@ import '../assets/styles/Services.css';
 const Services = () => {
     const [services, setServices] = useState([]);
 
+    // Deployed backend URL
+    const API_BASE_URL = 'https://nexus-interactive.onrender.com';
+
     useEffect(() => {
-        fetch('/api/services')  // Fetch from the backend services route
-            .then(response => response.json())
+        fetch(`${API_BASE_URL}/api/services`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
             .then(data => setServices(data))
             .catch(error => console.error('Error fetching services:', error));
     }, []);
@@ -19,7 +27,7 @@ const Services = () => {
                     <li key={index}>
                         <h3>{service.title}</h3>
                         <p>{service.description}</p>
-                        <br/>
+                        <br />
                     </li>
                 ))}
             </ul>
