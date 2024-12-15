@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
         <div className="privacy-policy-container">
             <h1>Privacy Policy</h1>
             <p>
-                Effective Date: <strong>December 6th 2024</strong>
+                Effective Date: <strong>December 14th 2024</strong>
             </p>
             <p>
                 At <strong>Nexus Interactive</strong>, we value your privacy and are committed to protecting the personal
@@ -64,7 +64,7 @@ const PrivacyPolicy = () => {
                 <li>Data portability, allowing you to receive your data in a machine-readable format.</li>
             </ul>
             <p>
-                To exercise these rights, please contact us at <strong>[Insert Contact Email]</strong>.
+                To exercise these rights, please contact us at <strong>ali.a@nexusint.dev</strong>.
             </p>
 
             <h2>5. Security of Your Information</h2>
@@ -92,9 +92,9 @@ const PrivacyPolicy = () => {
                 If you have any questions about this Privacy Policy or our practices, please contact us at:
             </p>
             <p>
-                <strong>Nexus Support Team</strong>
+                <strong>Nexus Interactive Support </strong>
                 <br />
-                Email: <a href="mailto:support@nexus.com">support@nexus.com</a>
+                Email: <a href="mailto:ali.a@nexusint.dev">ali.a@nexusint.dev</a>
                 <br />
             </p>
         </div>
