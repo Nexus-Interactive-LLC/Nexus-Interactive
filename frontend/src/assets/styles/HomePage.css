@@ -5,7 +5,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 90px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Futura', sans-serif;
     transition: box-shadow 0.3s ease;
 }
 
@@ -13,7 +13,7 @@
     font-size: 32px;
     margin-bottom: 20px;
     color: #333;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Futura', sans-serif;
     font-weight: 600;
     line-height: 1.4;
 }
