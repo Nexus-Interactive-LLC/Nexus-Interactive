@@ -1,0 +1,33 @@
+/* From Uiverse.io by JkHuger */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.animation {
+    font: bold 200% Consolas, Monaco, monospace;
+    border-right: 0.1em solid black;
+    width: 18ch; /* Adjust the width depending on your text */
+    margin: 10% auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(18, end), blink-caret 0.5s step-end infinite alternate;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+body {
+    margin: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
