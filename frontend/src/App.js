@@ -48,7 +48,6 @@ function App() {
                                     <Partners />
                                 </section>
                                 <section className="section">
-                                    <h2>Want to work with us?</h2>
                                     <ScheduleCall />
                                 </section>
                             </>

@@ -26,8 +26,8 @@ const Header = ({ currentPage, setCurrentPage }) => {
             {isHomePage && (
                 <nav>
                     <a href="#whoweare" onClick={handleNavClick}>About</a>
-                    {/*<a href="#services" onClick={handleNavClick}>Services</a>*/}
-                    {/*<a href="#partners" onClick={handleNavClick}>Partners</a>*/}
+                    {<a href="#services" onClick={handleNavClick}>Services</a>}
+                    {<a href="#partners" onClick={handleNavClick}>Partners</a>}
                     <a href="#schedulecall" onClick={handleNavClick}>Schedule Appointment</a>
                     <Link to="/Portfolio">Portfolio</Link>
                 </nav>

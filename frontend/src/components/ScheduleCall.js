@@ -14,6 +14,7 @@ const ScheduleButton = () => {
 
     return (
         <div id="schedulecall" className="schedule-button-container">
+            <h2 className="schedule-heading">Want to work with us?</h2>
             <button className="schedule-button" onClick={openModal}>
                 Schedule Appointment
             </button>
