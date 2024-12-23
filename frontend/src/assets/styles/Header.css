@@ -35,6 +35,17 @@
     color: rgba(0, 0, 0, 0.57);
 }
 
+.header .logo {
+    height: 50px;
+    width: auto;
+}
+
+.header .logo:hover {
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;

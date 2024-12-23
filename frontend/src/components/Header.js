@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/styles/Header.css';
 import {Link} from "react-router-dom";
+import logo from '../assets/styles/media/nexus-logo.png';
 
 const Header = ({ currentPage, setCurrentPage }) => {
     const isHomePage = window.location.pathname === "/";
@@ -14,7 +15,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
     return (
         <header className="header">
             <a href="/" onClick={handleNavClick}>
-                <h1>Nexus Interactive</h1>
+                <img src={logo} alt="Nexus Interactive LLC" className="logo" />
             </a>
             {isHomePage && (
                 <nav>
