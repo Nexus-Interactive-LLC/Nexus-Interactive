@@ -1,14 +1,20 @@
 import React from 'react';
 import '../assets/styles/Header.css';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import logo from '../assets/styles/media/nexus-logo.png';
 
 const Header = ({ currentPage, setCurrentPage }) => {
+    const navigate = useNavigate();
     const isHomePage = window.location.pathname === "/";
+    const isPortfolioPage = window.location.pathname === "/Portfolio";
 
-    const handleNavClick = () => {
-        if (currentPage === 'privacy') {
-            setCurrentPage('home');
+    const handleNavClick = (e, targetPage) => {
+        if (isPortfolioPage) {
+            navigate('/');
+        } else {
+            if (targetPage === 'privacy') {
+                setCurrentPage('home');
+            }
         }
     };
 

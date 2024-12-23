@@ -8,9 +8,7 @@ const WhoWeAre = () => {
                 <h2>Who we are</h2>
                 <hr className="divider" />
                 <p>
-                    At Nexus Interactive, we aim to provide cutting-edge web development and tailored digital solutions.
-                    With roots in the midwest region, we pride ourselves on being a partner. not just a service provider.
-                    What makes us different? We believe in proactive collaboration, relentless attention to detail, and solutions designed to eliminate your operational headaches. Whether you need speed optimization, security audits, or accessibility compliance, we are here to help you stay ahead in today’s competitive digital landscape.
+                    Nexus Interactive LLC is a dynamic web development agency specializing in creating innovative, user-centric websites and digital experiences. We collaborate with businesses of all sizes to bring their online presence to life, combining cutting-edge technology with thoughtful design. From custom websites and e-commerce platforms to content management systems and SEO optimization, we deliver scalable, high-performance solutions that drive success. Let us help you build the digital foundation for your brand and engage your audience like never before.
                 </p>
                 <p>
                     Nexus Interactive isn’t just a service provider—it’s your trusted partner for navigating and succeeding in the ever-changing world of technology.

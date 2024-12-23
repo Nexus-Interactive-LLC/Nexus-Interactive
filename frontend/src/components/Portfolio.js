@@ -7,7 +7,7 @@ const portfolioItems = [
     {
         title: "Personal Website",
         description: "A modern, responsive website for showcasing their work.",
-        image: iconSite1, // Replace with real image URLs
+        image: iconSite1,
         link: "https://aad3m.com",
     }
 ];
