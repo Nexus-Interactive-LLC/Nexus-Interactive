@@ -8,7 +8,9 @@ import WhoWeAre from './components/WhoWeAre';
 import ScheduleCall from "./components/ScheduleCall";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Portfolio from "./components/Portfolio";
-import Loading from './components/Loading'; // Import Loading component
+import Loading from './components/Loading';
+import Services from "./components/Services";
+import Partners from "./components/Partners"; // Import Loading component
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -38,6 +40,12 @@ function App() {
                                 </section>
                                 <section className="section">
                                     <WhoWeAre />
+                                </section>
+                                <section className="section">
+                                    <Services />
+                                </section>
+                                <section className="section">
+                                    <Partners />
                                 </section>
                                 <section className="section">
                                     <h2>Want to work with us?</h2>

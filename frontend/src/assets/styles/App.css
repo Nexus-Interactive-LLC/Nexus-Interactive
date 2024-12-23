@@ -10,7 +10,7 @@
 .App {
   font-family: 'Futura', sans-serif;
   color: #333;
-  background-color: #fafafa;
+  background-image: url("media/background.jpg");
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -23,7 +23,8 @@ main {
 
 h2 {
   text-align: center;
-  font-size: 29px;
+  font-size: 32px;
+  text-shadow: rgba(0, 0, 0, 0.07) 1px 5px 1px;
 }
 
 html {
