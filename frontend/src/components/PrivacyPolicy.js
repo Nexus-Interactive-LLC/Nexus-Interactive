@@ -6,10 +6,10 @@ const PrivacyPolicy = () => {
         <div className="privacy-policy-container">
             <h1>Privacy Policy</h1>
             <p>
-                Effective Date: <strong>December 14th 2024</strong>
+                Effective Date: <strong>January 14th 2025</strong>
             </p>
             <p>
-                At <strong>Nexus Interactive</strong>, we value your privacy and are committed to protecting the personal
+                At <strong>Nexus Interactive LLC</strong>, we value your privacy and are committed to protecting the personal
                 information you share with us. This Privacy Policy explains how we collect, use, and safeguard
                 your information when you use our services.
             </p>
